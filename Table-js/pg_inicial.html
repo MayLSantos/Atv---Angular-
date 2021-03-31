@@ -1,0 +1,41 @@
+<html ng-app>
+    <head>
+        <title> Atv-Table/Js </title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>       
+    </head>
+
+    <body>
+          
+        <header>
+          
+            <nav class="navegar">
+                 <ul class="menu">
+                    <li> <a href="pg_inicial.html"> Home </li></a> 
+                    <li> <a href="formulario.html"> Tabela </li></a> 
+                    <li> <a href="outros.html"> Outros </li></a> 
+                 </ul>
+                <h2 id="título"> Table/Js</h2>
+            </nav>
+          
+            <label id="alunas"> <i>Mayara Leticia / Lília Maria</i></label>
+          
+        </header>
+
+        <main>
+
+            <div class="inicio">
+                <h1> Qual é o seu nome?</h1>
+                <h3 id="sub"> Digite a baixo </h3>
+                <input type="text" ng-model="nome" id="pergunta">
+                <h3>Olá, {{ nome }}!!!</h3>
+            </div>
+        
+
+        </main>
+          
+          
+
+    </body>
+</html>

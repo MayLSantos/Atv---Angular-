@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.navegar{
+    background-color: blueviolet;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    align-items: center;
+}
+
+#título{color: white; padding-right: 200px;}
+
+.navegar a{
+    list-style: none;
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    font-weight: bolder;
+}
+
+.navegar li a:hover{
+    background-color: white;
+    color:blueviolet;
+    padding: 20px;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bolder;
+}
+
+#alunas{ background-color: black; 
+        color: white; 
+        font-weight: border; 
+        display: flex; 
+        justify-content: flex-end;
+        padding: 3px;
+        padding-right: 180px;
+        font-size: 13px;
+    
+}
+
+/*Formulário*/
+
+#tl{padding: 6px 0px 6px 0px;}
+
+table, form{
+    margin: 15px;
+}
+
+.separador input{
+    padding: 6px 9px 6px 9px;
+    border-radius: 20px;
+    background:  rgba(234, 208, 241, 50%);
+    color: black;
+    border-color: rgba(234, 208, 241, 50%);;
+}
+
+.form-inline{
+    padding: 30px;
+    margin:15px 270px 15px 270px; 
+    display: flex;
+    justify-content: center;
+    border-radius: 50px;
+    background: white;
+    color: black;
+}
+
+button{
+    background-color: black;
+    opacity: 80%;
+    color:white; 
+    padding: 10px 50px;
+    border-radius: 20px;
+    margin-left: 40px;
+    margin-top: 15px;
+
+}
+
+table{border-style: hidden;  width: 90%; margin-left: 70px;}
+
+tr{background-color: rgba(234, 208, 241, 50%);}
+
+th{padding: 10px; border: 1px solid gray; background-color: black; opacity: 80%; color: white}
+
+td{padding: 7px; text-align: center;}
+
+/*table{
+    margin: 35px 400px 35px 400px; 
+}
+
+
+tr td{
+    border: 1px blueviolet solid;
+    padding: 15px 40px;
+}
+
+thead{ background-color: gray; 
+    color:blueviolet; 
+    padding: 50px 0px 50px 50px;
+}*/
+
+
+
+.nada{
+    text-align: center;
+    margin: 160px;
+}
+
+h1{font-size: 60px;  padding: 20px;}
+h3{font-size: 25px;}
+
+img{padding: 40px;}
+
+.inicio{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin-top: 100px;
+}
+
+#pergunta{padding: 8px 40px;  margin: 25px;}

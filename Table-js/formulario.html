@@ -1,0 +1,78 @@
+<html ng-app>
+    <head>
+        <title> Atv-Table/Js </title>
+        <meta charset="utf-8">
+
+        <script src="https://code.angularjs.org/1.0.1/angular-1.0.1.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+        <script>
+            
+            function ListaCadastroController($scope){
+                $scope.cadastro = [
+                    {nome: 'Ravhy Maia', email: "ravhy.maia@gmail.com", tel: "(83)91010-1000"},
+                    {nome: 'Mayara Leticia', email: "mayara.leticia@academico.edu.ifpb.br", tel: "(83)90000-0000"},
+                    {nome: 'Lília Maria', email: "lilia.melo@academico.ifpb.edu.br", tel: "(83)90000-0000"},
+                  ];
+
+                $scope.adicionarItem = function () {
+                    $scope.cadastro.push({nome: $scope.item.nome,
+                                        email: $scope.item.email,
+                                        tel: $scope.item.tel});
+                };
+            };
+
+
+        </script>
+
+    </head>
+    <body>
+
+      <header>
+
+        <nav class="navegar">
+          <ul class="menu">
+            <li> <a href="pg_inicial.html"> Home </li></a> 
+            <li> <a href="formulario.html"> Tabela </li></a> 
+            <li> <a href="outros.html"> Outros </li></a> 
+          </ul>
+          <h2 id="título"> Table/Js</h2>
+        </nav>
+
+        <label id="alunas"> <i>Mayara Leticia / Lília Maria</i></label>
+
+      </header>
+
+        <form class="form-inline" name="formItem">
+
+          <div class="separador"> 
+            
+            <br> Nome: <input type="text" ng-model="item.nome"> </br>
+            <br> Email:  <input type="email" ng-model="item.email"> </br>
+            <br> Telefone: <input type="text" ng-model="item.tel" id="tl"> </br>
+            <br><button type="button" ng-click="adicionarItem()">Adicionar</button> </br>
+          </div>
+
+        </form>
+
+        <div ng-controller="ListaCadastroController">
+
+            <table>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                </tr>
+
+                <tr ng-repeat="item in cadastro">
+                    <td>{{ item.nome }}</td>
+                    <td>{{ item.email }}</td>
+                    <td>{{ item.tel }}</td>
+                </tr>
+
+            </table>
+
+        </div>
+
+    </body>
+</html>
